@@ -50,7 +50,7 @@ ENV AIRFLOW_DATABASE_HOST="postgresql" \
     AIRFLOW_WEBSERVER_PORT_NUMBER="8080" \
     AIRFLOW_WORKER_PORT_NUMBER="8793" \
     BITNAMI_APP_NAME="airflow-worker" \
-    BITNAMI_IMAGE_VERSION="1.10.10-debian-10-r5" \
+    BITNAMI_IMAGE_VERSION="1.10.10-debian-10-r6" \
     C_FORCE_ROOT="True" \
     LANG="en_US.UTF-8" \
     LANGUAGE="en_US:en" \
@@ -67,6 +67,6 @@ ENV AIRFLOW_DATABASE_HOST="postgresql" \
 
 EXPOSE 8793
 
-USER 1001
+USER 992
 ENTRYPOINT [ "/app-entrypoint.sh" ]
 CMD [ "/run.sh" ]
